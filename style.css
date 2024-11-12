@@ -6,17 +6,13 @@ body {
 
 h1 {
   color: dodgerblue;
-  font-size: 3rem;
   text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
   padding: 15px 0;
 }
 
 .text1, .text2 {
-  padding: 1.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  width: 85vw;
-  height: 220vh;
   font-size: 1.3rem;
   max-width: 990px;
   margin: 0 auto;

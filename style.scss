@@ -1,6 +1,12 @@
+$font-weights: (
+    "regular" : 400,
+    "medium": 500,
+    "bold":700
+);
+
 @use 'newColor1';
 @use 'newColor2' as s;
-@use 'mixins' as *;
+
 
 
 
@@ -14,17 +20,15 @@ body{
 }
 
 
-
-
 h1{
     color: newColor1.$bg-color;
-    font-size: 3rem;
     text-align: center;
+    font-size: 5rem;
+    font-weight: map-get($font-weights, bold );
     padding: 15px 0;
 }
 
 .text1,.text2{
-    @include text-settings(85vw, 220vh);
     font-size: 1.3rem;
     max-width: 990px;
     margin: 0 auto;
